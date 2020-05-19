@@ -24,7 +24,7 @@ public class ProductoController {
 	}
 	
 	//el {id} lo pasa por argumento a este metodo
-	@GetMapping("/listar/{id}")
+	@GetMapping("/ver/{id}")
 	public Producto detalle(@PathVariable Long id) {//@PathVariable es para pasar el argumento del endpoint
 		return productoService.findById(id);//aqui lo busca en la base de datos
 	}
